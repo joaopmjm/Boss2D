@@ -21,17 +21,14 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Shoot()
     {
-        Quaternion aq = GetArrowAngle();
-        Debug.Log($"Force: {force} Angle: {angle} Quaternion: {aq.eulerAngles}");
-        GameObject flecha = Instantiate(arrow, transform.position, aq);
-        flecha.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Abs(Mathf.Cos(aq.eulerAngles.z))*force,Mathf.Sin(aq.eulerAngles.z)*force);
-        aq = new Quaternion();
-    }
-
-    Quaternion GetArrowAngle(){
-        Quaternion q;
-        q = Quaternion.Euler(transform.eulerAngles - new Vector3(0,0,-270));
-        return q;
+        GameObject flecha = Instantiate(arrow, transform.position, Quaternion.identity);
+        if(angle >= 0)
+        {
+            flecha.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Abs(Mathf.Cos(angle)*force),Mathf.Sin(angle)*force);
+        }else
+        {
+            flecha.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Abs(Mathf.Cos(360 - angle)*force),Mathf.Sin(angle)*force);
+        }
     }
 
     float GetAngleBetweenBowAndMouse()

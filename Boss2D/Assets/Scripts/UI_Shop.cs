@@ -6,12 +6,10 @@ using UnityEngine.UI;
 public class UI_Shop : MonoBehaviour
 {
     GameManager gm;
-    Text mensagem;
     // Start is called before the first frame update
     void OnEnable()
     {
         gm = GameManager.GetInstance();
-        mensagem.text = "Ainda não implementada, Soh vai gastar sua grana!";
     }
 
     public void ArrowDMG()
