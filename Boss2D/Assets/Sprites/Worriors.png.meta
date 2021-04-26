@@ -1,0 +1,956 @@
+fileFormatVersion: 2
+guid: 4ab1ccf2fd62cfe4891ed7edde336a46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1461015198076349459
+    second: Worriors_0
+  - first:
+      213: 4372361721243283859
+    second: Worriors_1
+  - first:
+      213: 7204770261204251530
+    second: Worriors_2
+  - first:
+      213: -5792793793675168964
+    second: Worriors_3
+  - first:
+      213: -3816476739867550944
+    second: Worriors_4
+  - first:
+      213: -5429832677522091533
+    second: Worriors_5
+  - first:
+      213: -3639388739691969009
+    second: Worriors_6
+  - first:
+      213: -1383864773970212016
+    second: Worriors_7
+  - first:
+      213: 8628116083693092735
+    second: Worriors_8
+  - first:
+      213: -8487952113119492210
+    second: Worriors_9
+  - first:
+      213: -2388356892194606630
+    second: Worriors_10
+  - first:
+      213: 661998685284738500
+    second: Worriors_11
+  - first:
+      213: 4984230354888456793
+    second: Worriors_12
+  - first:
+      213: -8923071091718277007
+    second: Worriors_13
+  - first:
+      213: -8442670313579991269
+    second: Worriors_14
+  - first:
+      213: -6506928766739616878
+    second: Worriors_15
+  - first:
+      213: -7276781185092421190
+    second: Worriors_16
+  - first:
+      213: -4291689521099116424
+    second: Worriors_17
+  - first:
+      213: 1134363818790173335
+    second: Worriors_18
+  - first:
+      213: 6082477330513832181
+    second: Worriors_19
+  - first:
+      213: 7100443449498807193
+    second: Worriors_20
+  - first:
+      213: -2960474181279262562
+    second: Worriors_21
+  - first:
+      213: -1423293455163540190
+    second: Worriors_22
+  - first:
+      213: -3445185062088444210
+    second: Worriors_23
+  - first:
+      213: -1222980222857110934
+    second: Worriors_24
+  - first:
+      213: -7029061062688500015
+    second: Worriors_25
+  - first:
+      213: -1374581192005679807
+    second: Worriors_26
+  - first:
+      213: 6414365609328120169
+    second: Worriors_27
+  - first:
+      213: 8644944092235620118
+    second: Worriors_28
+  - first:
+      213: 1958818091531124565
+    second: Worriors_29
+  - first:
+      213: 7443606703248793274
+    second: Worriors_30
+  - first:
+      213: -4119804422535863968
+    second: Worriors_31
+  - first:
+      213: -8572353625049138962
+    second: Worriors_32
+  - first:
+      213: -7802635333893068542
+    second: Worriors_33
+  - first:
+      213: -7983459289004013594
+    second: Worriors_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 131, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Worriors_0
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 349.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ca9c4f491964410800000000000000
+      internalID: 1461015198076349459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 349.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391b838d1dfbdac30800000000000000
+      internalID: 4372361721243283859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_2
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 349.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83b06b416c7cf360800000000000000
+      internalID: 7204770261204251530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 349.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3377e67cbcdb9fa0800000000000000
+      internalID: -5792793793675168964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_4
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 349.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b57aa20a6290bc0800000000000000
+      internalID: -3816476739867550944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 291.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1dc72c2fb55a4b0800000000000000
+      internalID: -5429832677522091533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 291.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f068a1b393b4e7dc0800000000000000
+      internalID: -3639388739691969009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_7
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 291.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b4452f1568bcce0800000000000000
+      internalID: -1383864773970212016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_8
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 291.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f7c594dd93db770800000000000000
+      internalID: 8628116083693092735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_9
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 291.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e878cf2368cb43a80800000000000000
+      internalID: -8487952113119492210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_10
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 233.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad172e38f0adaded0800000000000000
+      internalID: -2388356892194606630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 233.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c52c2efb44ef2900800000000000000
+      internalID: 661998685284738500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_12
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 233.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a78d5a91b8b2540800000000000000
+      internalID: 4984230354888456793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 233.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17833985e12ea2480800000000000000
+      internalID: -8923071091718277007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 233.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f245bb41c95da80800000000000000
+      internalID: -8442670313579991269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 175.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29be6b703ceb2b5a0800000000000000
+      internalID: -6506928766739616878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_16
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 175.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9f152f01ea30b90800000000000000
+      internalID: -7276781185092421190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_17
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 175.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870fe907e1bd074c0800000000000000
+      internalID: -4291689521099116424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_18
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 175.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a3b0112e11ebf00800000000000000
+      internalID: 1134363818790173335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_19
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 175.7143
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8a4afd7ec496450800000000000000
+      internalID: 6082477330513832181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 117.71429
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b202392b7d98260800000000000000
+      internalID: 7100443449498807193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 117.71429
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98522ada684ae6d0800000000000000
+      internalID: -2960474181279262562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_22
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 117.71429
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22db6d9b4227f3ce0800000000000000
+      internalID: -1423293455163540190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_23
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 117.71429
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec67cbc707e3030d0800000000000000
+      internalID: -3445185062088444210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_24
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 117.71429
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a164987f9170fe0800000000000000
+      internalID: -1222980222857110934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_25
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 59.714287
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d61ced7432c37e90800000000000000
+      internalID: -7029061062688500015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_26
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 59.714287
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145819f40b18cece0800000000000000
+      internalID: -1374581192005679807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_27
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 59.714287
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9611c737987640950800000000000000
+      internalID: 6414365609328120169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_28
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 59.714287
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61fd0d859d209f770800000000000000
+      internalID: 8644944092235620118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_29
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 59.714287
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f325d0dae1f2b10800000000000000
+      internalID: 1958818091531124565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1.7142868
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe5cd2dbd00d4760800000000000000
+      internalID: 7443606703248793274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1.7142868
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061aaa294b383d6c0800000000000000
+      internalID: -4119804422535863968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_32
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1.7142868
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8f9e9dbc1e80980800000000000000
+      internalID: -8572353625049138962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_33
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1.7142868
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2096463018877b390800000000000000
+      internalID: -7802635333893068542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worriors_34
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1.7142868
+        width: 102
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e78f18231e053190800000000000000
+      internalID: -7983459289004013594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

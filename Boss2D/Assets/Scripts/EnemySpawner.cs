@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     GameManager gm;
-    float[] levelDelays = {5.0f, 4.0f, 3.5f};
-    int[] levelSpawnNums = {10,15,20};
+    float[] levelDelays = {5.0f, 4.0f, 3.0f};
+    int[] levelSpawnNums = {10,13,15};
     float delay = 0.0f;
     public GameObject[] level1;
     public GameObject[] level2;
@@ -18,17 +18,23 @@ public class EnemySpawner : MonoBehaviour
 
     void Spawn()
     {
+        gm.enemysOnline++;
         if(gm.level == 0)
         {
+            Debug.Log("0");
             Instantiate(level1[0], transform.position, Quaternion.identity);
         }
         if(gm.level == 1)
         {
-            Instantiate(level2[Random.Range(0,1)], transform.position, Quaternion.identity);
+            int i = Random.Range(0,2);
+            Debug.Log(i);
+            Instantiate(level2[i], transform.position, Quaternion.identity);
         }
         if(gm.level == 2)
         {
-            Instantiate(level3[Random.Range(0,2)], transform.position, Quaternion.identity);
+            int i = Random.Range(0,3);
+            Debug.Log(i);
+            Instantiate(level3[i], transform.position, Quaternion.identity);
         }
     }
 
@@ -36,12 +42,13 @@ public class EnemySpawner : MonoBehaviour
     {
         if(gm.gameState != GameManager.GameState.GAME) return;
         delay += Time.deltaTime;
-        if((levelDelays[gm.level-1] < delay + Time.deltaTime) & levelSpawnNums[gm.level-1] > 0){
+        Debug.Log($"Level: {gm.level}");
+        if((levelDelays[gm.level] < delay + Time.deltaTime) & levelSpawnNums[gm.level] > 0){
             Spawn();
-            levelSpawnNums[gm.level-1]--;
+            levelSpawnNums[gm.level]--;
             delay = 0.0f;
         }
-        if(levelSpawnNums[gm.level-1] <= 0 & transform.childCount == 0){
+        if(levelSpawnNums[gm.level] <= 0 & gm.enemysOnline <= 0){
             gm.LevelUp();
         }
     }

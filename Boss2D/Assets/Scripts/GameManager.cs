@@ -7,11 +7,12 @@ public class GameManager
     private static GameManager _instance;
     public enum GameState {MENU, GAME, PAUSE, SHOP, ENDGAME};
     public GameState gameState {get; private set;}
-    public int vidas;
     public int money;
     public int pontos;
-    public int level;
+    public int level = 0;
     public float timeBetweenSpawns;
+    public int enemysOnline;
+    public int arrowDmg;
     public delegate void ChangeStateDelegate();
     public static ChangeStateDelegate changeStateDelegate;
 
@@ -22,6 +23,11 @@ public class GameManager
             _instance = new GameManager();
         }
         return _instance;
+    }
+
+    public int getLife()
+    {
+        return GameObject.FindGameObjectsWithTag("Tower")[0].GetComponent<GateBehaviour>().vida;
     }
 
     public bool SpendMoney(int gasto)
@@ -36,13 +42,13 @@ public class GameManager
 
     public void LevelUp()
     {
-        if(level >= 3)
+        if(level >= 2)
         {
             ChangeState(GameManager.GameState.ENDGAME);
             return;
         }
-        ChangeState(GameManager.GameState.SHOP);
         level++;
+        ChangeState(GameManager.GameState.SHOP);
     }
 
     public void ChangeState(GameState nextState)
@@ -53,11 +59,13 @@ public class GameManager
         changeStateDelegate();
     }
 
-    private void Reset()
+    public void Reset()
     {
-        vidas = 100;
+        GameObject.FindGameObjectsWithTag("Tower")[0].GetComponent<GateBehaviour>().Reset();
+        arrowDmg = 2;
+        enemysOnline = 0;
         money = 0;
-        level = 1;
+        level = 0;
         pontos = 0;
     }
     private GameManager()
@@ -70,12 +78,11 @@ public class GameManager
     {
         if(fullLife)
         {
-            vidas = 100;
+            GameObject.FindGameObjectsWithTag("Tower")[0].GetComponent<GateBehaviour>().Reset(); 
         }
         else
         {
-            vidas += life;
-            if(vidas > 100) vidas = 100; 
+            GameObject.FindGameObjectsWithTag("Tower")[0].GetComponent<GateBehaviour>().heal(life);
         }
     }
 }

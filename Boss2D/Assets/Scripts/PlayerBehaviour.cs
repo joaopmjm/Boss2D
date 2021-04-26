@@ -1,46 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public float shotTimeDeplay;
     GameManager gm;
+    Vector2 dir;
     public GameObject arrow;
-    float force;
-    float forceLim = 15.0f;
+    float force = 0f;
+    float forceLim = 1500f;
+    public float forceDiff = 400f;
     float lastShot = 0.0f;
-    float shotDelay = 1.0f;
-    float angle;
+    public float shotDelay = 1.0f;
     bool keyIsDown = false;
+    Animator animator;
 
     void Start()
     {
         gm = GameManager.GetInstance();
+        animator = GetComponent<Animator>();
     }
 
     void Shoot()
     {
         GameObject flecha = Instantiate(arrow, transform.position, Quaternion.identity);
-        if(angle >= 0)
-        {
-            flecha.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Abs(Mathf.Cos(angle)*force),Mathf.Sin(angle)*force);
-        }else
-        {
-            flecha.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Abs(Mathf.Cos(360 - angle)*force),Mathf.Sin(angle)*force);
-        }
-    }
 
-    float GetAngleBetweenBowAndMouse()
-    {
-        var dir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float angulo = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        if(angulo > 90){
-            angulo -= 180;
-        }else if(angulo < -90){
-            angulo += 180;
-        }
-        return angulo;
+        flecha.gameObject.GetComponent<Rigidbody2D>().AddForce(dir.normalized * force);
     }
 
     void Update()
@@ -51,17 +37,24 @@ public class PlayerBehaviour : MonoBehaviour
         {
             if(force < forceLim)
             {
-                force += 10.0f * (float) Time.deltaTime;
+                force += forceDiff * (float) Time.deltaTime;
+                
             } 
         }
-        angle = GetAngleBetweenBowAndMouse();
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        
-        if(Input.GetButtonDown("Fire1"))
+        else{
+            animator.SetBool("Pulled", false);
+        }
+        GameObject.FindGameObjectsWithTag("ArrowStrenghtBar")[0].GetComponent<Image>().fillAmount = force/forceLim;
+        dir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float rot_z = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rot_z);
+
+        if (Input.GetButtonDown("Fire1"))
         {
             keyIsDown = true;
+            animator.SetBool("Pulled", true);
         }
-        if(Input.GetButtonUp("Fire1") && force > 0)
+        if(Input.GetButtonUp("Fire1") && keyIsDown)
         {
             keyIsDown = false;
             if(Time.time - lastShot >= shotDelay)

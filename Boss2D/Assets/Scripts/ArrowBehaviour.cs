@@ -5,14 +5,16 @@ using UnityEngine;
 public class ArrowBehaviour : MonoBehaviour
 {
     GameManager gm;
-    // public float vel;
-    private int dmg = 5;
+    public AudioClip hurtSound;
+    public AudioClip launchSound;
+    private int dmg;
     Vector3 stageDimensions; 
-    // Start is called before the first frame update
     void Start()
     {
         gm = GameManager.GetInstance();
+        dmg = gm.arrowDmg;
         stageDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height,0));
+        AudioManager.PlaySFX(launchSound);
     }
     bool isOut()
     {
@@ -34,6 +36,7 @@ public class ArrowBehaviour : MonoBehaviour
         if(col.CompareTag("Zombie"))
         {
             col.gameObject.GetComponent<BaseEnemy>().takeDamage(dmg);
+            AudioManager.PlaySFX(hurtSound);
             Destroy(gameObject);
         }
     }

@@ -13,6 +13,7 @@ public class UI_Menu : MonoBehaviour
 
     public void Iniciar()
     {
+        gm.Reset();
         gm.ChangeState(GameManager.GameState.GAME);
     }
 }

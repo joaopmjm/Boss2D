@@ -9,7 +9,11 @@ public class BaseEnemy : MonoBehaviour
     public float speed;
     public int points;
     public GameManager gm;
-    // Start is called before the first frame update
+    bool reachedTarget = false;
+    public AudioClip towerHurtSound;
+    float damageDelay = 1f;
+    float lastDmgDealt = 0.0f;
+    public Animator animator;
     public virtual void Start()
     {
     }
@@ -18,7 +22,6 @@ public class BaseEnemy : MonoBehaviour
     {
         vida -= damageTaken;
     }
-    // Update is called once per frame
     void Update()
     {
         if(gm.gameState != GameManager.GameState.GAME) return;
@@ -26,14 +29,27 @@ public class BaseEnemy : MonoBehaviour
             Destroy(gameObject);
             gm.pontos += points;
             gm.money += points;
-        } 
+            gm.enemysOnline--;
+        }
+        if(reachedTarget && (Time.time - lastDmgDealt > damageDelay))
+        {
+            AudioManager.PlaySFX(towerHurtSound);
+            GameObject.FindGameObjectsWithTag("Tower")[0].GetComponent<GateBehaviour>().takeDamage(dmg);
+            lastDmgDealt = Time.time;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.CompareTag("Tower"))
         {
+            animator.SetBool("ReachedTower", true);
             GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f,0.0f);
+            if(col.gameObject.CompareTag("Tower"))
+            {
+                lastDmgDealt = Time.time;
+                reachedTarget = true;
+            }
         }
     }
 }

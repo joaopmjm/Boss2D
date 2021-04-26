@@ -10,17 +10,22 @@ public class UI_EndGame : MonoBehaviour
     void OnEnable()
     {
         gm = GameManager.GetInstance();
-        if(gm.vidas > 0){
-            message.text = "You Win!!";
+        
+        foreach (GameObject item in GameObject.FindGameObjectsWithTag("Zombie"))
+        {
+            Destroy(item);
+        }
+        if(gm.getLife() > 0){
+            message.text = $"You Win!! Score: {gm.pontos}";
         }
         else
         {
-            message.text = "You Lost!!";
+            message.text = $"You Lost!! Score: {gm.pontos}";
         }
     }
 
     public void Voltar()
     {
-        gm.ChangeState(GameManager.GameState.GAME);
+        gm.ChangeState(GameManager.GameState.MENU);
     }
 }
